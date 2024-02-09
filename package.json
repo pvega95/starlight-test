@@ -1,7 +1,7 @@
 {
   "name": "starlight-test",
   "private": true,
-  "version": "1.0.0-pre-release.1",
+  "version": "1.0.0-pre-release.2",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
