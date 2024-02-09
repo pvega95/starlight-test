@@ -1,7 +1,16 @@
 {
   "name": "starlight-test",
-  "private": true,
   "version": "1.0.0",
+  "description": "Hypermedia Template",
+  "main": "dist/main.tsx",
+  "module": "dist/index.es.js",
+  "source": "src/main.tsx",
+  "author": "Platform",
+  "repository": "https://github.com/TRANZACT/Platforms.Starlight.HypermediaClient",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
