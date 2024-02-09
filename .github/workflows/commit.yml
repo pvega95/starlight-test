@@ -1,0 +1,44 @@
+name: Commit Message Structure Check
+
+on:
+  push:
+    branches:
+      - '**'
+
+jobs:
+  commit_message_check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Check Commit Messages
+        run: |
+          # Define a regular expression to match the desired commit message structure
+          branch_types="feat|fix"
+          commit_regex="^($branch_types)\(EAPP-[0-9]+\): .+|Merge branch 'develop' into (feature|fix)/EAPP-[0-9]+_.*|Merge pull request .*"
+
+          # Check commit messages using git log without specifying a revision range
+          git log --format="%s" | while read -r line; do
+            if [[ ! $line =~ $commit_regex ]]; then
+              echo "ERROR: Invalid commit message detected!"
+              echo "Invalid commit message: '$line'"
+              echo
+              echo "Your commit message must follow one of these structures:"
+              echo "1. For feature or bug fixes:"
+              echo "   - Format: <type>(EAPP-<ticket number>): <description>"
+              echo "   - Example: feat(EAPP-9999): Add new login feature"
+              echo "   - Example: fix(EAPP-9999): Fix login button alignment"
+              echo
+              echo "2. For merge commits:"
+              echo "   - Format: Merge branch 'develop' into <type>/EAPP-<ticket number>_<description>"
+              echo "   - Example: Merge branch 'develop' into feature/EAPP-9999_new-feature"
+              echo "   - Example: Merge branch 'develop' into fix/EAPP-9999_bugfix"
+              echo
+              echo "3. For general merge pull requests:"
+              echo "   - Format: Merge pull request #<pr number> from TRANZACT/<branch name>"
+              echo
+              echo "Please ensure your commit messages adhere to this format."
+              exit 1  # Exit the script with an error code
+            fi
+          done
