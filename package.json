@@ -6,7 +6,7 @@
   "module": "dist/index.es.js",
   "source": "src/main.tsx",
   "author": "Platform",
-  "repository": "https://github.com/TRANZACT/Platforms.Starlight.HypermediaClient",
+  "repository": "https://github.com/pvega95/starlight-test",
   "license": "MIT",
   "files": [
     "dist"
