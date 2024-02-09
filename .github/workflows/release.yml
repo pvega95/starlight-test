@@ -46,5 +46,5 @@ jobs:
       - name: Publish to GitHub Packages
         env:
           # PAT needs to be created in Repo with Brach protection rule allowed for required branch
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: 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
         run: npx semantic-release
