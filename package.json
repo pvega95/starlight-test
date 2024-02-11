@@ -25,7 +25,6 @@
     "@mui/material": "^5.10.11",
     "@mui/styled-engine-sc": "^5.10.6",
     "@mui/x-date-pickers": "^5.0.5",
-    "@platform/react-components": "^8.4.2",
     "dotenv": "^16.0.3",
     "path": "^0.12.7",
     "react": "^18.2.0",
