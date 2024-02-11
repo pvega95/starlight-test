@@ -47,5 +47,5 @@ jobs:
         env:
           # PAT needs to be created in Repo with Brach protection rule allowed for required branch
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ env.NPM_TOKEN }}
+          NPM_TOKEN: ${{ vars.NPM_TOKEN }}
         run: npx semantic-release
