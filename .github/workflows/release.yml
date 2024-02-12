@@ -33,9 +33,6 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Print NPM Token
-        run: echo ${{ secrets.NPM_TOKEN }} # This line will print the NPM token to the console
-
       - name: Publish to GitHub Packages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
