@@ -1,3 +1,12 @@
+# [1.1.0-pre-release.1](https://github.com/pvega95/starlight-test/compare/v1.0.0...v1.1.0-pre-release.1) (2024-02-12)
+
+
+### Features
+
+* **EAPP-9999:** Merfe conflicts ([1fff46d](https://github.com/pvega95/starlight-test/commit/1fff46dd90ec2daf4d1845569e36999ace0e3d5f))
+* **EAPP-9999:** Updating git ignore ([bbb4bb0](https://github.com/pvega95/starlight-test/commit/bbb4bb0b841478b769480d71f352411d9e1d2274))
+* **EAPP-9999:** Updating text ([e6d2219](https://github.com/pvega95/starlight-test/commit/e6d2219ea94166d7e435467f5e2906f3c3eb2437))
+
 # 1.0.0-pre-release.1 (2024-02-12)
 
 
