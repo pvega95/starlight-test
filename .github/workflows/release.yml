@@ -3,13 +3,13 @@ name: Release
 on:
   push:
     branches:
-        - 'main'
+      - 'main'
+      - 'pre-release'
 
 jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
-    environment: dev
     permissions:
       contents: write
       issues: write
@@ -19,7 +19,6 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v3
         with:
-          # https://semantic-release.gitbook.io/semantic-release/recipes/ci-configurations/github-actions#pushing-package.json-changes-to-a-master-branch
           persist-credentials: false
 
       - name: Setup Node.js 20.x
@@ -32,19 +31,9 @@ jobs:
 
       - name: Build
         run: npm run build
-      
-      - name: Creating .npmrc
-        run: |
-          cat << EOF > "$HOME/.npmrc"
-          @tranzact:registry=https://npm.pkg.github.com
-
-          //npm.pkg.github.com/:_authToken=$NODE_AUTH_TOKEN
-          EOF
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Publish to GitHub Packages
         env:
-          # PAT needs to be created in Repo with Brach protection rule allowed for required branch
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npx semantic-release

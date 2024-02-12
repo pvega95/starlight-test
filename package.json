@@ -1,12 +1,25 @@
 {
   "name": "starlight-test",
-  "private": true,
   "version": "1.0.0",
+  "description": "Hypermedia Template",
+  "main": "dist/main.tsx",
+  "module": "dist/index.es.js",
+  "source": "src/main.tsx",
+  "author": "Platform",
+  "repository": "https://github.com/pvega95/starlight-test",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "build:cuy": "vite --config vite-cuy.config.ts build"
+    "build:cuy": "vite --config vite-cuy.config.ts build",
+    "publish": "semantic-release"
   },
   "dependencies": {
     "@emotion/react": "^11.11.3",
@@ -16,7 +29,6 @@
     "@mui/material": "^5.10.11",
     "@mui/styled-engine-sc": "^5.10.6",
     "@mui/x-date-pickers": "^5.0.5",
-    "@platform/react-components": "^8.4.2",
     "dotenv": "^16.0.3",
     "path": "^0.12.7",
     "react": "^18.2.0",
@@ -24,8 +36,7 @@
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.43.1",
     "react-router-dom": "^6.4.2",
-    "styled-components": "^5.3.6",
-    "vite-plugin-treat-umd-as-commonjs": "^0.1.3"
+    "styled-components": "^5.3.6"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
@@ -37,6 +48,6 @@
     "@types/styled-components": "^5.1.26",
     "@vitejs/plugin-react-swc": "^3.0.0",
     "typescript": "^4.9.3",
-    "vite": "^4.1.0"
+    "vite": "^4.5.2"
   }
 }
