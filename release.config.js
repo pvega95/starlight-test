@@ -2,7 +2,7 @@
 const jsonData = require('./package.json')
 
 module.exports = {
-  branches: ['main', { name: 'pre-release', channel: 'pre-release', prerelease: true }],
+  branches: ['main', 'develop', { name: 'pre-release', channel: 'pre-release', prerelease: true }],
   repositoryUrl: jsonData.repository,
   plugins: [
     '@semantic-release/commit-analyzer',
