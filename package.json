@@ -6,16 +6,23 @@
   "module": "dist/index.es.js",
   "source": "src/main.tsx",
   "author": "Platform",
-  "repository": "https://github.com/pvega95/starlight-test",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pvega95/starlight-test"
+  },
   "license": "MIT",
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "build:cuy": "vite --config vite-cuy.config.ts build"
+    "build:cuy": "vite --config vite-cuy.config.ts build",
+    "publish": "semantic-release"
   },
   "dependencies": {
     "@emotion/react": "^11.11.3",
