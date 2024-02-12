@@ -1,6 +1,6 @@
 {
   "name": "starlight-test",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Hypermedia Template",
   "main": "dist/main.tsx",
   "module": "dist/index.es.js",
