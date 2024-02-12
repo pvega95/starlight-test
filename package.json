@@ -6,10 +6,7 @@
   "module": "dist/index.es.js",
   "source": "src/main.tsx",
   "author": "Platform",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/pvega95/starlight-test"
-  },
+  "repository": "https://github.com/pvega95/starlight-test",
   "license": "MIT",
   "files": [
     "dist"
