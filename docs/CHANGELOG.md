@@ -1,3 +1,10 @@
+# [1.1.0-pre-release.1](https://github.com/pvega95/starlight-test/compare/v1.0.0...v1.1.0-pre-release.1) (2024-02-13)
+
+
+### Features
+
+* **EAPP-9999:** update ([33cd6e4](https://github.com/pvega95/starlight-test/commit/33cd6e43cb684a1ac7d463f02c0342ae2d886dde))
+
 # 1.0.0 (2024-02-13)
 
 
