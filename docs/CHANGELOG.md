@@ -1,4 +1,4 @@
-# 1.0.0-pre-release.1 (2024-02-13)
+# 1.0.0 (2024-02-13)
 
 
 ### Features
@@ -12,6 +12,7 @@
 * **EAPP-9999:** Merge main ([b2022ff](https://github.com/pvega95/starlight-test/commit/b2022ff2365c82b0304fa3b0c54a55da50b5519b))
 * **EAPP-9999:** Merge main ([2fb51af](https://github.com/pvega95/starlight-test/commit/2fb51afb2b7951a6d9082ad52ce95489b101db43))
 * **EAPP-9999:** merge pre-release ([6ff87a0](https://github.com/pvega95/starlight-test/commit/6ff87a0f603258f9df07937cda6d02b5adeaecef))
+* **EAPP-9999:** update ([80c4bbc](https://github.com/pvega95/starlight-test/commit/80c4bbcd07976d4cfff6f16906d803d539349d09))
 * **EAPP-9999:** update ([e32cdee](https://github.com/pvega95/starlight-test/commit/e32cdee001c12656cae8d29a8e05c9ed58651c58))
 * **EAPP-9999:** Updating git ignore ([bbb4bb0](https://github.com/pvega95/starlight-test/commit/bbb4bb0b841478b769480d71f352411d9e1d2274))
 * **EAPP-9999:** Updating text ([e6d2219](https://github.com/pvega95/starlight-test/commit/e6d2219ea94166d7e435467f5e2906f3c3eb2437))
