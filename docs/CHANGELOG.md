@@ -1,3 +1,11 @@
+## [1.2.1-develop.1](https://github.com/pvega95/starlight-test/compare/v1.2.0...v1.2.1-develop.1) (2024-02-24)
+
+
+### Bug Fixes
+
+* **EAPP-9999:** Updating app.tsx 21 ([3c7428f](https://github.com/pvega95/starlight-test/commit/3c7428ffb286dcd54ce8dbe048931b727225c39a))
+* **EAPP-9999:** Updating app.tsx 22 ([d676401](https://github.com/pvega95/starlight-test/commit/d676401e2d562d064ddb89ce636b4a1e6e946f95))
+
 # [1.2.0](https://github.com/pvega95/starlight-test/compare/v1.1.0...v1.2.0) (2024-02-24)
 
 
