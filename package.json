@@ -1,6 +1,6 @@
 {
   "name": "starlight-local",
-  "version": "1.2.1-develop.1",
+  "version": "1.2.1-develop.2",
   "description": "Hypermedia Template",
   "main": "dist/main.tsx",
   "module": "dist/index.es.js",
